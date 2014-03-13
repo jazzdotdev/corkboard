@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+  {{ SITENAME }}
+{% endblock %}
+
+{% block content %}
+  {{ super() }}
+
+  {% block articles_index %}
+    <div id="articles-index" class="pure-u-2-3">
+      {% include 'widgets/articles-index.html' %}
+    </div>
+  {% endblock %}
+
+{% endblock %}
